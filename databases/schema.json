@@ -1,0 +1,60 @@
+{
+  "shows": [
+    {
+      "label": "date",
+      "type": "date"
+    },
+    {
+      "label": "teams",
+      "type": "select"
+    },
+    {
+      "label": "picture",
+      "type": "upload"
+    }
+  ],
+  "teams": [
+    {
+      "label": "name",
+      "type": "string"
+    },
+    {
+      "label": "shows",
+      "type": "select"
+    },
+    {
+      "label": "performers",
+      "type": "select"
+    },
+    {
+      "label": "picture",
+      "type": "upload"
+    },
+    {
+      "label": "wins",
+      "type": "int"
+    },
+    {
+      "label": "losses",
+      "type": "int"
+    },
+    {
+      "label": "ties",
+      "type": "int"
+    }
+  ],
+  "performers": [
+    {
+      "label": "name",
+      "type": "string"
+    },
+    {
+      "label": "teams",
+      "type": "select"
+    },
+    {
+      "label": "picture",
+      "type": "upload"
+    }
+  ]
+}

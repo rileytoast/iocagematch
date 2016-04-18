@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../lib/bundle.js"></script>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>Riley Mondragon</title>
+  </head>
+       
+  <body ng-app="rileyAdmin" ng-controller="adminController">
+    <div id="page">
+      <div id="content">
+        <div class="post text">
+          <div class="blog-title">
+            <h1>Admin</h1>
+          </div>
+          <div class="narrow">
+            <div class="caption">
+              <div>
+                <div ng-repeat="scheme in schema[currentTab]">
+                  <h1>{{scheme.label}}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- content end -->
+
+      <div id="footer">
+        <div class="colophon">
+          <p>&copy; Riley Mondragon 2016</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -12,8 +12,16 @@ app.use '/bower_components', express.static path.join __dirname, '../bower_compo
 app.get '/', (req, res) ->
   res.sendFile path.join __dirname, '../views/index.html'
 
-app.get '/shows', (req, res) ->
+app.get '/admin', (req, res) ->
+  res.sendFile path.join __dirname, '../views/admin.html'
+
+app.get '/db', (req, res) ->
   db.getData()
+    .then (data) ->
+      res.send data
+
+app.get '/schema', (req, res) ->
+  db.getSchema()
     .then (data) ->
       res.send data
 
